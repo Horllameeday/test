@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<button onclick="output()">Start Calculation</button>
+
+<form action="">
+    <table id="ouput">
+        <tr>
+            <th>Device</th>
+            <th>Power consumption in Watts</th>
+            <th>Hours per day  use</th>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="number" max=24></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="number" max=24></td>
+        </tr>
+    </table>
+    <button onclick="add()">Add</button>
+</form>
+{% endblock content %}
